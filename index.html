@@ -4,26 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
     <h1>Weather Dashboard</h1>
     </header>
-    
-    <aside id="side-bar">
-        <div id="search-city">
-            <input type="text" id="search-bar" placeholder="Enter a City">
-            <button type="button" id="search-btn">Search</button>
-        </div>
-        <div id="default-city"></div>
-    </aside>
 
-    <div id="forecastcard">
-        <h2>5-Day Forecast</h2>
+    <div class="container">
+        <aside class="side-bar">
+            <div class="search-city">
+                <input type="text" id="search-bar" placeholder="Enter a City">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <div class="city-list">
+                <button>Atlanta</button>
+                <button>Denver</button>
+                <button>Seattle</button>
+                <button>San Francisco</button>
+                <button>Orlando</button>
+                <button>New York</button>
+                <button>Chicago</button>
+                <button>Austin</button>        
+            </div>
+        </aside>
+
+        <div class="right-container">
+            <div class="city-container">
+                <h2 class="current-city" id="0-city">Atlanta</h2>
+                <h2 class="current-date" id="0-date">05-03-2023</h2>
+                <div class="current-info">
+                    <div class="label">Temperature: <span id="0-temp">30</span>&deg;</div>
+                    <div class="label">Wind: <span id="0-wind">5</span>mph</div>
+                    <div class="label">Humidity: <span id="0-humid">10</span>%</div>
+                </div>
+            </div>
+            <div class="card-container">
+                <h2>5-Day Forecast</h2>
+                <card>
+                    <div class="label">Date: <span id="1-date">05-04-2023</span></div>
+                    <div class="label">Temperature: <span id="1-temp">30</span>&deg;</div>
+                    <div class="label">Wind: <span id="1-wind">5</span>mph</div>
+                    <div class="label">Humidity: <span id="1-humid">10</span>%</div>
+                </card>
+                <card>
+                    <div class="label">Date: <span id="2-date">05-04-2023</span></div>
+                    <div class="label">Temperature: <span id="2-temp">30</span>&deg;</div>
+                    <div class="label">Wind: <span id="2-wind">5</span>mph</div>
+                    <div class="label">Humidity: <span id="2-humid">10</span>%</div>
+                </card>
+                <card>
+                    <div class="label">Date: <span id="3-date">05-04-2023</span></div>
+                    <div class="label">Temperature: <span id="3-temp">30</span>&deg;</div>
+                    <div class="label">Wind: <span id="3-wind">5</span>mph</div>
+                    <div class="label">Humidity: <span id="3-humid">10</span>%</div>
+                </card>
+                <card>
+                    <div class="label">Date: <span id="4-date">05-04-2023</span></div>
+                    <div class="label">Temperature: <span id="4-temp">30</span>&deg;</div>
+                    <div class="label">Wind: <span id="4-wind">5</span>mph</div>
+                    <div class="label">Humidity: <span id="4-humid">10</span>%</div>
+                </card>
+                <card>
+                    <div class="label">Date: <span id="5-date">05-04-2023</span></div>
+                    <div class="label">Temperature: <span id="5-temp">30</span>&deg;</div>
+                    <div class="label">Wind: <span id="5-wind">5</span>mph</div>
+                    <div class="label">Humidity: <span id="5-humid">10</span>%</div>
+                </card>
+            </div>   
+        </div> 
     </div>
 
-    <script src="assets/js/script.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

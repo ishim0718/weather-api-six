@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    color: darkblue;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.container {
+    display: flex;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.search-city {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-city button {
+    background-color: lightblue; 
+    border: 1px solid darkblue; 
+    color: navy; 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+}
+
+.city-list {
+    padding: 2rem;
+}
+
+.city-list button {
+    background-color: lightblue; 
+    border: 1px solid darkblue; 
+    color: navy; 
+    padding: 10px 24px; 
+    cursor: pointer;
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.city-container {
+    display: flex;
+    border: 2px solid darkblue;
+}
+
+.city-container h2 {
+    padding-left: 2rem;
+}
+
+.current-info {
+    display: flex;
+    padding-left: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-info .label {
+    padding: 1rem;
+}
+
+.card-container {
+    display: flex;
+    border: 2px solid darkblue;
+}
+
+.card-container h2 {
+    padding-left: 2rem;
+}
+
+.card-container card {
+    border: 1px solid darkblue;
+    justify-content: space-around;
+}
+
